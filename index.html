@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8"/>
+<meta name="description" content="JavaScript thingy"/>
+<meta name="keywords" content="Javascript"/>
+<meta name="author" content="Ramon PULUMBARIT,"/>
+	<style>
+
+	</style>
+
+	     <script> 
+function unamefx() {
+  if (document.cookie.replace(/(?:(?:^|.*;\s*)doSomethingOnlyOnce\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+	alert("Do something here!");
+    document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  }
+  else
+  {
+  alert("Don't even try!");
+  }
+}
+  </script>
+  </head>
+
+    <body>
+<p> This thing only activates ONCE. You can never make it activate ever again EVEN IF you try to close the thing and open it again</p><br>
+<button onclick=unamefx()>PRESS THIS TO DO SOMETHING</button><br>
+
+  </body>
+</html>
+    
+    
